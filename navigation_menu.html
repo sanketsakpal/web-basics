@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu></title>
+    <style>
+.navbar{
+    background-color: black;
+    border-radius: 4px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li a{
+padding: 10px;
+text-decoration: none;
+ color: white;
+}
+.navbar li {
+    /* flow will overflowed child from parent */
+    float: left;
+    list-style: none;
+    margin: 10px 16px;
+    padding-top: 8px;
+   
+}
+.search {
+    float: right;
+    margin: 16px;
+}
+.navbar input {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px 14px;
+
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact us</a> </li>
+    <div class="search"> <input type="text" class="searchbox" placeholder="Search Me"></div>
+</ul>
+
+        </nav>
+    </header>
+</body>
+</html>
