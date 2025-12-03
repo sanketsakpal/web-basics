@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+h1{
+    background-color: red;
+    color: black;
+}
+/* div  p{
+    color: blue;
+    
+} */
+ /* only apply for direct child of div  */
+/* div > p{
+    color: blue;
+     */
+/* } */
+
+/* apply on siblings of div */
+div + p{
+    color: blue;
+    
+}
+.container{
+    display: block;
+    width: 232px;
+    margin: auto;
+    padding: 16px;
+}
+input{
+display: block;
+}
+input[type='text']{
+    padding: 23px;
+}
+input[type='email']{
+    padding: 23px;
+    margin: 10px;
+}
+a[target='_blank']{
+color: aqua;
+font-size: 23px;
+}
+a[target]{
+    background-color: blueviolet;
+}
+li:nth-child(4){
+    color: brown;
+}
+li:nth-child(2n+1){
+    color: burlywood;
+}
+li:nth-child(odd){
+    color: red;
+}
+</style>
+<body>
+
+    <h1>this is selectors</h1>
+    <div>
+        <div class="row">
+            <ul>
+                <li><p>para under li</p></li>
+            </ul>
+            <p>this is para</p>
+
+        </div>
+        <p>this is para 2</p>
+    </div>
+    <p>this is outer para</p>
+
+      <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+</html>
