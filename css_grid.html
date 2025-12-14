@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px auto auto; */
+            /* grid-template-columns: 3fr 3fr 3fr; */
+             grid-template-columns: repeat(10, auto);
+             grid-template-rows: 1fr 1fr 4fr;
+             /* grid-auto-rows: 3fr; */
+
+        }
+
+        .item {
+            /* height: 150px; */
+
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">this is item1</div>
+        <div class="item">this is item2</div>
+        <div class="item">this is item3</div>
+        <div class="item">this is item4</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+          <div class="item">this is item10</div>
+             <div class="item">this is item1</div>
+        <div class="item">this is item2</div>
+        <div class="item">this is item3</div>
+        <div class="item">this is item4</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+          <div class="item">this is item10</div>
+    </div>
+</body>
+
+</html>
